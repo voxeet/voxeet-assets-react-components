@@ -38,7 +38,7 @@ Copy/paste your files inside your project and keep this tree :
 - voxeet-react-components.css
 - images (folder)
 - fonts (folder)
-- sound (folder)
+- sounds (folder)
 
 Add you CSS file inside your HTML page :
 
