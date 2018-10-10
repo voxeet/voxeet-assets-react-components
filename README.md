@@ -48,8 +48,8 @@ Add you CSS file inside your HTML page :
 
 Or inside your js file 
 
-``javascript
+```javascript
 import './voxeet-react-components.css';
-``
+```
 
 Start your project and you're good to go !
