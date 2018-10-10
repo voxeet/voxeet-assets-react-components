@@ -12,9 +12,9 @@ Feel free to regenerate the css with instructions below
 
 You need to install lessc in ordre to generate the CSS.
 
-``
+```bash
 brew install lessc
-``
+```
 
 ## Customize
 
@@ -24,19 +24,20 @@ Main colors are inside the ``variables.less`` file
 
 Generate CSS file from less files
 
-``
+```bash
 lessc less/main.less > voxeet-react-components.css
-``
+```
 
 ## Include
 
 When your CSS file in generated, add it inside your HTML page :
 
-``
+```html
 <link rel="stylesheet" type="text/css" href="./voxeet-react-components.css" />
-``
+```
 
 Or inside your js file 
-``
+
+``javascript
 import './voxeet-react-components.css';
 ``
