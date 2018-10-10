@@ -7,6 +7,7 @@ This repository contains styles and icon for the Voxeet React components. You ca
 Feel free to regenerate the css with instructions below
 
 You need to install lessc in ordre to generate the CSS.
+
 ``
 brew install lessc
 ``
