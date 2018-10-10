@@ -1,6 +1,10 @@
 Voxeet Assets React Components
 =====================
 
+<p align="center">
+<img src="https://www.voxeet.com/wp-content/themes/wp-theme/assets/images/logo.svg" alt="Voxeet SDK logo" title="Voxeet SDK logo" width="100"/>
+</p>
+
 ## Installation
 
 This repository contains styles and icon for the Voxeet React components. You can modify the css or replace images.
