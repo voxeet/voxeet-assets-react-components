@@ -15,7 +15,7 @@ Feel free to regenerate the css with instructions below
 You need to install lessc in order to generate the CSS.
 
 ```bash
-brew install lessc
+npm install -g less
 ```
 
 ## Customize
