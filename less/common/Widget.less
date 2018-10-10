@@ -1,0 +1,39 @@
+* {
+  text-align: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.vxt-widget-container {
+  background-color: transparent;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+  height: 100%;
+  overflow-x: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55px;
+  transition: all ease-in-out 0.2s;
+
+  &.vxt-widget-opened {
+    width: 300px;
+  }
+
+  &.vxt-widget-fullscreen-on {
+    width: 100%;
+  }
+}
+
+.vxt-sidebar {
+  background-color: @navBgColor;
+  border-right: 1px solid @sidebarBorderColor;
+  position: absolute;
+  //left: 0;
+  top: 0;
+  height: 100%;
+  text-align: center;
+  width: 55px;
+  z-index: 1;
+}
