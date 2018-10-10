@@ -9,10 +9,10 @@ Voxeet Assets React Components
 
 Before customize the Voxeet React components, try to integrate with the default template and when it's done, you can begin your customization. (https://www.npmjs.com/package/@voxeet/react-components)
 
-This repository contains styles and icon for the Voxeet React components. You can modify the css or replace images.
+This repository contains styles and icons for the Voxeet React components. You can modify the css or replace images.
 Feel free to regenerate the css with instructions below
 
-You need to install lessc in ordre to generate the CSS.
+You need to install lessc in order to generate the CSS.
 
 ```bash
 brew install lessc
