@@ -7,6 +7,8 @@ Voxeet Assets React Components
 
 ## Installation
 
+Before customize the Voxeet React components, try to integrate with the default template and when it's done, you can begin your customization. (https://www.npmjs.com/package/@voxeet/react-components)
+
 This repository contains styles and icon for the Voxeet React components. You can modify the css or replace images.
 Feel free to regenerate the css with instructions below
 
@@ -19,6 +21,7 @@ brew install lessc
 ## Customize
 
 Main colors are inside the ``variables.less`` file
+You can also change icons (using the same size should be better to get the same ratio) inside ``images/newicons``
 
 ## Usage
 
@@ -30,7 +33,14 @@ lessc less/main.less > voxeet-react-components.css
 
 ## Include
 
-When your CSS file in generated, add it inside your HTML page :
+Copy/paste your files inside your project and keep this tree :
+
+- voxeet-react-components.css
+- images (folder)
+- fonts (folder)
+- sound (folder)
+
+Add you CSS file inside your HTML page :
 
 ```html
 <link rel="stylesheet" type="text/css" href="./voxeet-react-components.css" />
@@ -41,3 +51,5 @@ Or inside your js file
 ``javascript
 import './voxeet-react-components.css';
 ``
+
+Start your project and you're good to go !
