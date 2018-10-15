@@ -884,7 +884,7 @@
                       margin: 0% 0 0 -85px;*/
                     }
                     .stream-media {
-                        height: calc(100% - 85px);
+                        height: ~"calc(100% - 85px)";
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -1325,6 +1325,9 @@
       }
       .content{
           background-color: @white;
+          position: absolute;
+          top: 15px;
+          margin: 0;
           margin: 2% auto;
           padding: 20px;
           border-radius: 5px;
