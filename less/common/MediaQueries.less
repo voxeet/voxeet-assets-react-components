@@ -1,82 +1,392 @@
-@media screen and (min-width: 768px) and (max-width: 991px)
-{
-  #settings-container { display: none; }
-  .settings .content { width: 300px; }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .settings .content {
+    width: 300px;
+  }
   .vxt-bottom-bar .vxt-bottom-bar-actions {
-    ul {
-      width: 50%;
+    .controls-center {
+      width: 35%;
+    }
+    .controls-left {
+      width: 20%;
     }
     .controls-right {
+      width: 45%;
+    }
+    .separator {
       display: none;
     }
   }
-  .vxt-conference-attendees .settings-webinar-presenter .content form { display: inline-block; max-width: 50%; }
-  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty { display:inline-block; max-width: 50%; }
+  #external-live {
+    display: none;
+  }
+  .electron-info-container {
+    margin: auto;
+  }
+  #loader-container {
+    margin: auto;
+    width: 32px;
+    height: 23px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .content form {
+    display: inline-block;
+    max-width: 50%;
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty {
+    display: inline-block;
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-height: 1050px) {
-  .vxt-conference-attendees .settings-webinar-presenter {  }
-  .vxt-conference-attendees .settings-webinar-presenter .content { width: auto; position: absolute; top: 15px; margin: 0;}
-  .vxt-conference-attendees .settings-webinar-presenter .content h3 { margin: 0; }
-  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty #password { max-width: 100%; }
-  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty .ul-external-live { display: grid }
-  .vxt-conference-attendees .settings-webinar-presenter .content form { display: inline-block }
-  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty { display:inline-block }
-  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty button { width: 100%; margin-top: 15px; position: relative; margin-left: 0; text-align: center;}
-  .vxt-conference-attendees .settings-webinar-presenter .content .video { display: table; }
+  .vxt-conference-attendees .settings-webinar-presenter {
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .content {
+    width: auto;
+    position: absolute;
+    top: 15px;
+    margin: 0;
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .content h3 {
+    margin: 0;
+  }
+  .vxt-conference-attendees
+    .settings-webinar-presenter
+    .modal-thirdparty
+    #password {
+    max-width: 100%;
+  }
+  .vxt-conference-attendees
+    .settings-webinar-presenter
+    .modal-thirdparty
+    .ul-external-live {
+    display: grid;
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .content form {
+    display: inline-block;
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty {
+    display: inline-block;
+  }
+  .vxt-conference-attendees
+    .settings-webinar-presenter
+    .modal-thirdparty
+    button {
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+    margin-left: 0;
+    text-align: center;
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .content .video {
+    display: table;
+  }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px)
-{
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .vxt-bottom-bar .vxt-bottom-bar-actions {
     ul {
-      width: 34%;
-    }
-    .controls-right {
-      display: none;
+      .controls-center {
+        width: 31%;
+      }
+      .controls-left {
+        width: 17%;
+      }
+      .controls-right {
+        width: 45%;
+      }
+      .separator {
+        margin: 0px 6px;
+      }
     }
   }
-  .vxt-conference-attendees .settings-webinar-presenter .content form { display: inline-block; max-width: 50%; }
-  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty { display:inline-block; max-width: 50%; }
+  .attendees-chat {
+    width: 285px;
+  }
+  .attendees-list {
+    width: 285px;
+  }
+  .attendees-settings {
+    width: 285px;
+  }
+  .vxt-conference-attendees .sidebar-container.attendees-list-opened {
+    margin-right: 285px;
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .content form {
+    display: inline-block;
+    max-width: 50%;
+  }
+  .vxt-conference-attendees .settings-webinar-presenter .modal-thirdparty {
+    display: inline-block;
+    max-width: 50%;
+  }
 }
 
-@media screen and (min-width: 1600px)
-{
-  .vxt-conference-attendees .SidebarTiles[data-number-user='3'] .tile-item {
-      max-width: calc(100% / 3)!important;
-      height: 100%;
+@media screen and (min-width: 1600px) {
+  .vxt-conference-attendees .SidebarTiles[data-number-user="3"] .tile-item {
+    max-width: calc(100% / 3) !important;
+    height: ~"calc(100% - 85px)" !important;
   }
 }
 
-@media screen and (max-width: 767px)
-{
-  #settings-container { display: none; }
-  .vxt-conference-attendees .layout-container {
-    p {
-      display: none;
-    }
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    background-color: #fff;
-    padding: 5px 5px 5px 30px;
-    border-radius: 4px;
-    z-index: 100;
-    font-size: 14px;
-    cursor: pointer;
+@media screen and (max-width: 767px) {
+  .vxt-widget-container.vxt-widget-opened {
+    width: 100%;
   }
-  .vxt-widget-fullscreen-on .vxt-conference-attendees .SidebarTiles .tiles-list { height: 100%; }
-  .vxt-conference-attendees .Sidebar3D .react-draggable { width: 70px;height: 70px; }
-  .vxt-conference-attendees .Sidebar3D .item { height: 70px; width: 70px; }
-  .vxt-conference-attendees .participant-bar-3d { margin-left: -30px;width: 100px; }
-  .vxt-widget-fullscreen-on .vxt-conference-attendees .SidebarSpeaker .active-speaker .video-frame { bottom: 0px; }
-  .vxt-conference-attendees .sidebar-container { margin-bottom: 40px; }
+  .fullscreen-screenshare {
+    display: none !important;
+  }
+  .file-presentation .file-presentation-img {
+    width: 100%;
+  }
+  .electron-info-container {
+    margin: auto;
+  }
+  #loader-container {
+    margin: auto;
+    width: 32px;
+    height: 23px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .icon-fullscreen-on {
+    display: none !important;
+  }
+
+  .vxt-conference-attendees {
+    width: ~"calc(100% - 55px)";
+    .layout-container {
+      p {
+        display: none;
+      }
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      background-color: #fff;
+      padding: 4px 4px 4px 35px;
+      border-radius: 4px;
+      z-index: 100;
+      height: 22px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  .vxt-conference-attendees .video-frame {
+    min-height: 79px;
+  }
+  .vxt-conference-attendees .video-frame .stream-media {
+    padding: 0;
+  }
+  .vxt-widget-fullscreen-on
+    .vxt-conference-attendees
+    .SidebarTiles
+    .tiles-list {
+    height: 100%;
+  }
+  .vxt-widget-fullscreen-on
+    .vxt-conference-attendees
+    .SidebarTiles
+    .tile-item
+    .tile-video
+    .preview-avatar {
+    height: 90px;
+    width: 90px;
+  }
+  .vxt-conference-attendees .Sidebar3D .react-draggable {
+    width: 70px;
+    height: 70px;
+  }
+  .vxt-widget-fullscreen-on
+    .vxt-conference-attendees
+    .SidebarSpeaker
+    .active-speaker
+    .video-frame
+    .participant-bar {
+    bottom: 10px;
+  }
+  .vxt-conference-attendees .Sidebar3D .item {
+    height: 70px;
+    width: 70px;
+  }
+  .vxt-conference-attendees .participant-bar-3d {
+    margin-left: -30px;
+    width: 100px;
+  }
+  .vxt-widget-fullscreen-on
+    .vxt-conference-attendees
+    .SidebarSpeaker
+    .active-speaker
+    .video-frame {
+    bottom: 0px !important;
+  }
+  .vxt-conference-attendees
+    .SidebarSpeaker
+    .SidebarList
+    .list-items
+    .item.participant-forced-active {
+    border-bottom: 3px solid @linkColor !important;
+  }
+  .vxt-conference-attendees .sidebar-container {
+    margin-bottom: 40px;
+  }
+  .vxt-conference-attendees .SidebarTiles {
+    .participant-bar {
+      bottom: 2px !important;
+    }
+    &[data-number-user="1"] {
+      .tile-item {
+        height: ~"calc(100% - 20px)";
+        max-width: 100%;
+      }
+    }
+    &[data-number-user="2"] {
+      .tile-item {
+        max-width: 100% !important;
+        height: ~"calc(50% - 10px)";
+      }
+    }
+    &[data-number-user="3"] {
+      .tile-item {
+        max-width: 100% !important;
+        height: ~"calc(calc(100%/3) - 10px)" !important;
+      }
+    }
+    &[data-number-user="4"] {
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: 50%;
+      }
+    }
+
+    &[data-number-user="5"] {
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 3);
+      }
+    }
+
+    &[data-number-user="6"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 3);
+      }
+    }
+    &[data-number-user="7"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 4);
+      }
+    }
+    &[data-number-user="8"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 4);
+      }
+    }
+    &[data-number-user="9"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 5);
+      }
+    }
+    &[data-number-user="10"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 5);
+      }
+    }
+    &[data-number-user="11"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 20px)";
+        max-width: calc(100% / 6);
+      }
+    }
+    &[data-number-user="12"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 6);
+      }
+    }
+    &[data-number-user="13"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 7);
+      }
+    }
+    &[data-number-user="14"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 7);
+      }
+    }
+    &[data-number-user="15"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 8);
+      }
+    }
+    &[data-number-user="16"] {
+      .participant-bar {
+        //margin: 0px 0 0% -90px;
+      }
+      .tile-item {
+        height: ~"calc(50% - 7px)";
+        max-width: calc(100% / 8);
+      }
+    }
+  }
   .vxt-conference-attendees .conference-empty {
     p {
       font-size: 11px;
     }
   }
   .vxt-conference-attendees {
+    .onboardingmessagewithaction {
+      font-size: 12px;
+    }
+    .onboardingmessage-fadeout {
+      font-size: 12px;
+    }
+    .onboardingmessagewithaction-hidden {
+      font-size: 12px;
+    }
+    .onboardingmessage {
+      font-size: 12px;
+    }
+    .onboardingmessagewithaction-error {
+      font-size: 12px;
+    }
     .participant-bar {
       width: 110px;
       margin-left: -70px;
@@ -85,17 +395,30 @@
       }
     }
   }
-  .video-pip-fullscreen { bottom: 50px!important }
+  .video-pip-fullscreen {
+    bottom: 50px !important;
+  }
   .ConferenceRoomVideoShare {
     left: 10px;
     .video-share {
       width: 80px;
       height: 110px;
-      margin-left:0px;
+      margin-left: 0px;
     }
   }
-  .vxt-widget-fullscreen-on .vxt-conference-attendees .SidebarSpeaker .SidebarList .list-items .item {
-    height: 80px;
+  .vxt-widget-fullscreen-on
+    .vxt-conference-attendees
+    .SidebarSpeaker
+    .SidebarList {
+    background: transparent;
+  }
+  .vxt-widget-fullscreen-on
+    .vxt-conference-attendees
+    .SidebarSpeaker
+    .SidebarList
+    .list-items
+    .item {
+    height: 78px;
     width: 80px;
     overflow: hidden;
     .participant-bar {
@@ -104,6 +427,10 @@
       }
       span.name {
         min-width: 50px;
+        padding: 0;
+        text-align: center;
+        line-height: 21px;
+        min-height: 21px;
       }
       .bar-icons {
         display: none;
@@ -111,6 +438,8 @@
       top: auto;
       bottom: 0px;
       margin-left: -40px;
+      min-height: 22px;
+      padding: 0px 12px 0px 12px;
       width: 55px;
       border-radius: 0;
     }
@@ -118,45 +447,106 @@
       .preview-avatar {
         width: 40px;
         height: 40px;
-        margin-top: 15px;
+        margin-top: 5px;
       }
     }
   }
-  .settings .content { width: 100%; height: 100%;padding:0; }
-  .vxt-bottom-bar .vxt-bottom-bar-actions {
-    ul {
-      width: 50%;
-      margin-bottom: 0px;
-      margin-top: 0px;
-      .hangup-bottom-bar a img {
-        width: 30px;
-      }
-      li {
-        width: 30px;
-        height: 30px;
-        a {
-          height: 30px;
-          width: 30px;
-          img {
-            width: 20px;
-            vertical-align: middle;
-            margin: auto;
-            display: flex;
-          }
-          div {
-            display:none;
-          }
-        }
-      }
-      .audio3d img {
-        width: 20px!important;
-        vertical-align: middle;
-        margin: auto;
-        display: flex;
+  #screenshare-container,
+  #pincode-container {
+    display: none;
+  }
+  #external-live {
+    display: none;
+  }
+  .attendees-chat {
+    width: 100%;
+    height: ~"calc(100% - 40px)" !important;
+    .container-input-chat {
+      a {
+        font-size: 12px;
+        width: 36%;
+        bottom: 0;
       }
     }
-    .controls-right {
-      display: none;
+  }
+  .attendees-list {
+    width: 100%;
+    height: ~"calc(100% - 40px)" !important;
+  }
+  .attendees-settings {
+    width: 100%;
+    height: ~"calc(100% - 40px)" !important;
+  }
+  .settings .content {
+    width: 100%;
+    height: 100% !important;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
+  .settings .content .close {
+    margin-top: 10px;
+    margin-right: 30px;
+  }
+  .settings .content .close a {
+    font-size: 12px;
+  }
+  .settings .content .loadbar li {
+    width: 7px;
+  }
+  .settings .content .loadbar li .ins {
+    width: 7px;
+  }
+  .settings .content h3 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .vxt-bottom-bar {
+    padding: 5px 0px 5px 0px;
+    .vxt-bottom-bar-actions {
+      .controls-center {
+        width: 32%;
+      }
+      .controls-left {
+        width: 34%;
+      }
+      .controls-right {
+        width: 34%;
+      }
+      ul {
+        width: 35%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        .separator {
+          display: none;
+        }
+        .hangup-bottom-bar a img {
+          width: 30px;
+        }
+        li {
+          width: 30px;
+          height: 30px;
+          a {
+            height: 30px;
+            width: 30px;
+            img {
+              width: 20px;
+              vertical-align: middle;
+              margin: auto;
+              display: flex;
+            }
+            div {
+              display: none;
+            }
+          }
+        }
+        .audio3d img {
+          width: 20px !important;
+          vertical-align: middle;
+          margin: auto;
+          display: flex;
+        }
+      }
     }
   }
 }
@@ -166,8 +556,18 @@
     ul {
       margin-top: 5px;
       margin-bottom: 5px;
-      li { margin: 0 5px }
-      .separator { display:none; }
+      li {
+        margin: 0 5px;
+      }
+      .separator {
+        display: none;
+      }
     }
+  }
+}
+
+@media (hover: none) {
+  .vxt-bottom-bar .vxt-bottom-bar-actions ul li {
+    background-color: transparent !important;
   }
 }

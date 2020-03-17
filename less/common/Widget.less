@@ -8,7 +8,7 @@ a:hover {
 
 .vxt-widget-container {
   background-color: transparent;
-  box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
   height: 100%;
   position: absolute;
   z-index: 100;
@@ -16,13 +16,14 @@ a:hover {
   top: 0;
   width: 55px;
   transition: all ease-in-out 0.2s;
-
+  position: fixed;
   &.vxt-widget-opened {
-    width: 300px;
+    width: 405px;
   }
 
   &.vxt-widget-fullscreen-on {
     width: 100%;
+    overflow: hidden;
   }
 }
 
@@ -38,7 +39,8 @@ a:hover {
   z-index: 50;
   .bubble-tip {
     background-color: #fff;
-    margin-left: -79px;
+    animation: createBox 0.25s;
+    margin-left: -85px;
     width: 190px;
     border: 1px solid #ccc;
     height: 240px;
@@ -46,7 +48,7 @@ a:hover {
     top: -265px;
     border-radius: 4px;
     padding: 8px;
-    font-family: @font-family;
+    font-family: @font-family-medium;
     .anchor-popup {
       width: 0;
       height: 0;
@@ -59,22 +61,45 @@ a:hover {
     }
     .icon-close {
       position: absolute;
-      border:none;
+      border: none;
       right: 15px;
-      width:auto;
+      width: auto;
       color: #ccc;
       font-size: 9px;
     }
     .icon-close:hover {
-      border:none;
+      border: none;
+    }
+    .pincode {
+      font-weight: bold;
+      margin-top: 5px;
+      font-size: 14px !important;
+      display: inline-block;
+      width: auto;
+      text-align: center;
+      margin-left: 0;
+    }
+    select {
+      height: 25px;
+      width: 90%;
+      margin: 15px auto auto auto;
+    }
+    p {
+      font-size: 13px;
+      text-align: left;
+      line-height: 16px;
+      margin-left: 8px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+      color: #000;
     }
     span {
       width: 85%;
       display: block;
       text-align: left;
       color: #000;
-      margin-bottom: 20px!important;
-      margin-top: 5px!important;
+      margin-bottom: 20px !important;
+      margin-top: 5px !important;
       height: auto;
       font-size: 15px;
       margin: auto;
@@ -88,7 +113,7 @@ a:hover {
     a {
       border: 1px solid #ccc;
       width: 85%;
-      margin:auto;
+      margin: auto;
       border-radius: 4px;
       display: block;
       padding: 0;
@@ -104,6 +129,10 @@ a:hover {
         width: 16px;
         vertical-align: text-top;
         margin-right: 5px;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
       }
     }
   }
